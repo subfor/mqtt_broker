@@ -9,15 +9,11 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.orm import declarative_base
 
 TIMEZONE = timezone('Europe/Kiev')
-# DB_USER = os.getenv('DB_USER')
-# DB_PASS = os.getenv('DB_PASS')
-# DB_HOST = os.getenv('DB_HOST')
-# DB = os.getenv('DB')
+DB_USER = os.getenv('DB_USER')
+DB_PASS = os.getenv('DB_PASS')
+DB_HOST = os.getenv('DB_HOST')
+DB = os.getenv('DB')
 
-DB_USER = "root"
-DB_PASS = "pass"
-DB_HOST = "192.168.3.5"
-DB = "mqtt_data"
 DeclarativeBase = declarative_base()
 
 
